@@ -1,0 +1,31 @@
+body
+{
+	/*background: #0000FF;*/
+	/*background: rgba(155,40,33); */
+	/*background: rgba(155,40,33,1); */
+	background: purple;
+	color: white;
+}
+header
+{
+	border: 1px solid black;
+	text-align: center;
+}
+header nav ul li /*Afecta lo ultimo en este caso li*/
+{
+	background: pink;
+	border: 1px solid black; /*ponerle borde a las li*/
+	border-radius: 5px; /*quitar lo cuadrado y redondear*/
+	display: inline-block; /*quitas el block para que no abarque el 100 de la pagina */
+	width: 100px;/*Ancho especifico*/
+
+}
+header nav ul li:hover /*Cuando pase por el espacio pase el mouse por ensima se colore*/
+{
+	background: black;
+	border: 1px solid pink; /*ponerle borde a las li*/
+	border-radius: 5px; /*quitar lo cuadrado y redondear*/
+	display: inline-block; /*quitas el block para que no abarque el 100 de la pagina */
+	width: 100px;/*Ancho especifico*/
+
+}

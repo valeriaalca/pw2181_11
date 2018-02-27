@@ -6,6 +6,17 @@ body
 	background: purple;
 	color: white;
 }
+main
+{
+	margin-top: 15px;
+}
+footer
+{
+	border: 1px solid pink;
+	font-weight: bold;
+	padding: 20px;
+	text-align: center;
+}
 header
 {
 	border: 1px solid black;
@@ -17,6 +28,7 @@ header nav ul li /*Afecta lo ultimo en este caso li*/
 	border: 1px solid black; /*ponerle borde a las li*/
 	border-radius: 5px; /*quitar lo cuadrado y redondear*/
 	display: inline-block; /*quitas el block para que no abarque el 100 de la pagina */
+	padding : 5px 10px ;
 	width: 100px;/*Ancho especifico*/
 
 }
@@ -26,6 +38,18 @@ header nav ul li:hover /*Cuando pase por el espacio pase el mouse por ensima se 
 	border: 1px solid pink; /*ponerle borde a las li*/
 	border-radius: 5px; /*quitar lo cuadrado y redondear*/
 	display: inline-block; /*quitas el block para que no abarque el 100 de la pagina */
+	/*margin-right: 15px;*/ 
+	margin: 0px 35px 0px 0px;
+	padding : 5px 10px ; /* se usa padding por que esta dentro de la caja*/
 	width: 100px;/*Ancho especifico*/
 
+}
+		/*padding dentro de la misma 
+		margin de una caja a otra caja*/
+main section article 
+{
+	border : 1px dashed pink;
+	display: inline-block;
+	vertical-align:  top;
+	width: 32.65%;
 }

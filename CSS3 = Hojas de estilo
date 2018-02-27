@@ -1,0 +1,14 @@
+CSS3 = Hojas de estilo
+Maqueteado = HTML5 + CSS3
+			(Diseño, colores, etc).
+Hoja de estilo :
+	*Selectores
+			-Etiqueta
+				atributos:valor;
+			-Identificador
+				atributos:valor;
+			-Clase
+				atributos:valor;
+			-Pseudoelemento
+				atributos:valor
+*Todos en orden alfabetico

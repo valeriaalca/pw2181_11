@@ -1,0 +1,8 @@
+body{
+
+	border: 1px solid blue;
+	font-size: 16px; /* 1 em= M letra con mas ancho del alfabeto*/
+	margin: 0 auto; /*mover caja,, 0px para que no tenga, auto para que se alinie automaticamente*/ 
+	max-width: 1024px /*1024 minima */
+
+}

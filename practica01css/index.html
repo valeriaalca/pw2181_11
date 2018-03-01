@@ -3,11 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Practica 01 CSS3</title>
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 	<header>
 		<img src="img/resplandor.png" alt="">
-		<img src="img/logo.png" alt="">
+		<img src="img/logo.png" id="logo" alt=""> <!--se pone id siendo unico para manipularlo mas facil solo (1)-->
 		<nav>
 			<ul>
 				<li>Inicio</li>
@@ -24,16 +25,16 @@
 			</form> <!--#referencia-->
 		</nav>
 	</header>
-	<section>
+	<section id="seccion01"> 
 		<article>
 			<img src="img/slide2.jpg" alt="">
 		</article>
 	</section>
-	<section>
+	<section id="seccion02"> 
 		<article>
 			<img src="img/separador.jpg" alt="">
 			<br>
-			Una seccion
+			<span class="unaSeccion">Una seccion</span>  <!--Span para seleccionar texto y clasificarlo dentro se pone una clase cuando son varios -->
 			<br>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit consequatur adipisci numquam tempora consectetur qui nesciunt ad a laborum quasi atque maxime optio laboriosam, id delectus at, hic eveniet facere!
 			<p></p> <!--Salto en parrafo-->
@@ -44,7 +45,7 @@
 		<article>
 			<img src="img/separador.jpg" alt=""></article>
 			<br>
-			Otra seccion
+			<span class="otraSeccion">Otra seccion</span>
 			<br>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quaerat, voluptatibus vel soluta suscipit cumque, quo earum ad inventore adipisci officia reiciendis. Inventore magnam voluptate blanditiis distinctio itaque! Ad, aspernatur.
 			<br>
@@ -55,7 +56,7 @@
 		<article>
 			<img src="img/separador.jpg" alt="">
 			<br>
-			Un Vídeo
+			<span class="otraSeccion">Un video</span>
 			<br>
 			<img src="img/video.jpg" alt="">
 		</article>

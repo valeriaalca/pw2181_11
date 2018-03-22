@@ -1,0 +1,92 @@
+article
+{
+	border: 1px solid blue;
+	border-radius: 5px;
+	height: 50px;
+	margin-top: 10px;
+	width: 150px;
+}
+#uno 
+{
+	/*si no soporta gradientes se lo pone 255,0,0,1=rojo----255,255,0,1=verde*/ /
+	background: red;
+
+	/*opera*/
+	background: -o- linear-gradient(rgba(255,0,0,1), rgba(255,255,0,1));
+	/*safari*/
+	background: -webkit- linear-gradient(rgba(255,0,0,1), rgba(255,255,0,1));
+	/*Mozilla Firefox*/
+	background: -moz-  linear-gradient(rgba(255,0,0,1), rgba(255,255,0,1));
+	/*EDGE - Internet Explorer*/
+	background: -ms-  linear-gradient(rgba(255,0,0,1), rgba(255,255,0,1));
+	/*para todos los navegadores*/
+	background: linear-gradient(rgba(255,0,0,1), rgba(255,255,0,1));
+}
+#dos{
+
+	/*si no soporta gradientes */
+	background: red;
+	/*opera*/
+	background: -o- linear-gradient(to left, red,yellow);
+	/*safari*/
+	background: -webkit- linear-gradient(to left, red,yellow);
+	/*Mozilla Firefox*/
+	background: -moz-  linear-gradient(to left, red,yellow);
+	/*EDGE - Internet Explorer*/
+	background: -ms-  linear-gradient(to left, red,yellow);
+	/*para todos los navegadores*/
+	background: linear-gradient(to left, red,yellow);
+}
+#tres{
+
+	/*si no soporta gradientes */
+	background: red;
+	/*opera*/
+	background: -o- linear-gradient(to right, red,yellow);
+	/*safari*/
+	background: -webkit- linear-gradient(to right, red,yellow);
+	/*Mozilla Firefox*/
+	background: -moz-  linear-gradient(to right, red,yellow);
+	/*EDGE - Internet Explorer*/
+	background: -ms-  linear-gradient(to right, red,yellow);
+	/*para todos los navegadores*/
+	background: linear-gradient(to right, red,yellow);
+}
+#cuatro{ 
+
+	/*si no soporta gradientes to right izqueirda hacia abajo */
+	background: red;
+	/*opera*/
+	background: -o- linear-gradient(to right bottom, red,yellow);
+	/*safari*/
+	background: -webkit- linear-gradient(to right bottom, red,yellow);
+	/*Mozilla Firefox*/
+	background: -moz-  linear-gradient(to right bottom, red,yellow);
+	/*EDGE - Internet Explorer*/
+	background: -ms-  linear-gradient(to right bottom, red,yellow);
+	/*para todos los navegadores*/
+	background: linear-gradient(to right bottom, red,yellow);
+
+}
+#cinco{ 
+
+	/*si no soporta gradientes to right izqueirda hacia abajo */
+	background: red;
+	/*opera*/
+	background: -o- linear-gradient(to left bottom, red,yellow);
+	/*safari*/
+	background: -webkit- linear-gradient(to left bottom, red,yellow);
+	/*Mozilla Firefox*/
+	background: -moz-  linear-gradient(to left bottom, red,yellow);
+	/*EDGE - Internet Explorer*/
+	background: -ms-  linear-gradient(to left bottom, red,yellow);
+	/*para todos los navegadores*/
+	background: linear-gradient(to left bottom, red,yellow);
+
+}
+
+
+
+
+
+

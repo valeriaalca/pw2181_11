@@ -1,0 +1,53 @@
+
+
+/*poner en color rojo el texto de las secciones menos el id="refencias"*/
+#resumen,#experimento,#pruebas,#resultados,#conclusiones
+{
+	color: tomato;
+}
+/*Poner en color rosa en el texto de las secciones menos el id="referencias"*/
+section:not(#referencias)
+{
+	color: hotpink;
+}
+/*Seleccionar elemento li impares*/
+li:nth-child(odd)/*impar*/
+{
+	color: green;
+}
+/*Seleccionar elemento li pares*/
+li:nth-child(even)/*par*/
+{
+	color: blue;
+}
+/*Seleccionar elemento li quinto de arriba hacia abajo*/
+li:nth-child(5)/*quinto elemento*/
+{
+	color: red;
+}
+/*Seleccionar elemento li primer elemento de abajo hacia arriba*/
+li:nth-last-child(1)/**/
+{
+	color: purple;
+}
+/*Seleccionar elemento li impares*/
+li:nth-child(odd)/*impar*/
+{
+	color: green;
+}
+/*Verificar compatibilidad con el navegador*/
+/*primer elemento*/
+article:fisrt-child /*Equivale al nth-child(1)*/
+{
+	color: blue;
+}
+/*Ultimo elemento*/
+article:last-child /*Equivale al nth-child(1)*/
+{
+	color: yellow;
+}
+/*Primer linea de un parrafo*/
+p:first-line
+{
+	font-weight: bold;
+}

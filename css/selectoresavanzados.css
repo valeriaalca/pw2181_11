@@ -1,53 +1,121 @@
+/*Imagen con atributo alt*/
+img[alt]{
+	border:5px solid blue;
+}
+/*Imagen con atributo SRC cadena exacta*/
+img[src="img/logo.png"]{
+	width: 400px;
+}
+/*^ = circunflejo*/
+/*Imagen con atributo SRC con el inicio
+de la cadena*/
+img[src^="img/"]{
+	width: 150px;
+}
+/*Imagen con atributo SRC con el final
+de la cadena*/
+img[src$="png"]{
+	width: 250px;
+}
+/*Imagen con atributo SRC en
+cualquier parte de la cadena*/
+img[src*="mg/"]{
+	width: 1000px;
+}
+/*El caracter ~ indica que estos 
+selectores están separados por espacios*/
+article[class~="resaltado"]{
+	border: 1px dashed blue;
+}
+article[class~="archivo"]{
+	border: 1px dashed red;
+}
+article[class~="ingles"]{
+	border: 1px dashed green;
+}
+/*El atributo class/id es una lista de 
+valores separados por guiones*/
+article[class|="ingles"]{
+	text-align: center;
+}
 
+/*Selector de secundarios.
+Seleccionar solamente las <p>
+que se encuentran inmediatamente
+después del <div>*/
+div > p{ /*solo hijos directos*/
+	color: blue;
+}
+/*Todos los elemento <p> serán
+seleccionados*/
+div p{
+	color: red;
+}
 
-/*poner en color rojo el texto de las secciones menos el id="refencias"*/
+/*Seleccionar solo el elemento <p> que
+está inmediatamente después del elemento
+<h2>*/
+h2 + p{
+	color:green;
+}
+
+/*Seleccionar todos los hermanos del 
+tipo de elemento especificado
+(Hermano general)*/
+h2 ~ p{
+	color:gray;
+}
+
+/*Poner en color rojo el texto de las secciones
+menos el id="referencias"*/
 #resumen,#experimento,#pruebas,#resultados,#conclusiones
 {
 	color: tomato;
 }
-/*Poner en color rosa en el texto de las secciones menos el id="referencias"*/
-section:not(#referencias)
-{
-	color: hotpink;
+/*Poner en color rosa el texto de las secciones
+menos el id="referencias"*/
+section:not(#referencias){
+	color:hotpink;
 }
-/*Seleccionar elemento li impares*/
-li:nth-child(odd)/*impar*/
+
+/*Seleccionar elementos LI impares*/
+li:nth-child(odd) /*impar*/
 {
-	color: green;
+	color:green;
 }
-/*Seleccionar elemento li pares*/
-li:nth-child(even)/*par*/
+/*Seleccionar elementos LI pares*/
+li:nth-child(even) /*par*/
 {
-	color: blue;
+	color:blue;
 }
-/*Seleccionar elemento li quinto de arriba hacia abajo*/
-li:nth-child(5)/*quinto elemento*/
+
+li:nth-child(5) /*quinto elemento*/
 {
-	color: red;
+	color:red;
 }
-/*Seleccionar elemento li primer elemento de abajo hacia arriba*/
-li:nth-last-child(1)/**/
+/*Primer elemento de abajo hacia arriba*/
+li:nth-last-child(1)
 {
-	color: purple;
+	color:purple;
 }
-/*Seleccionar elemento li impares*/
-li:nth-child(odd)/*impar*/
+/*Verificar compatibilidad con 
+el navegador*/
+article:first-child /*nth-child(1)*/
 {
-	color: green;
+	color:blue;
 }
-/*Verificar compatibilidad con el navegador*/
-/*primer elemento*/
-article:fisrt-child /*Equivale al nth-child(1)*/
+article:last-child /*nth-last-child(1)*/
 {
-	color: blue;
+	color:yellow;
 }
-/*Ultimo elemento*/
-article:last-child /*Equivale al nth-child(1)*/
-{
-	color: yellow;
-}
-/*Primer linea de un parrafo*/
-p:first-line
-{
+/*Primer línea de un párrafo*/
+p:first-line{
 	font-weight: bold;
 }
+
+
+
+
+
+
+

@@ -1,0 +1,136 @@
+body
+{
+	border: 1px: solid blue;
+	font-size: 16px;
+	margin: 0 auto;
+	min-width: 1024px;
+	max-width: 1024px;
+	
+}
+header
+{
+	width: 99%
+}
+header input
+{
+	width: 500px;
+	margin-left: 90px;
+	
+}
+#aditii
+{
+	
+	margin-left: 20px;
+	margin-top: 20px;
+
+}
+#canasta
+{
+	float: right;
+	position: relative;
+	margin-left: 80px;
+}
+#colorgris
+{
+	background: gray;
+}
+#nito
+{
+ font-weight: bold;
+}
+#letrapequeña
+{
+	font-size: 1em;
+}
+#letramediana
+{
+	font-size: 1.5em;
+}
+#letragrande
+{
+	font-size: 4em;
+}
+header nav
+{
+	background: #3dc4b6;
+}
+header nav li
+{
+	color:white;
+	margin-right: 12px;
+	padding-bottom: 1px;
+	display: inline-block;
+	border-right: 1.1px solid white;
+	text-align: center;
+
+
+}
+#seccion01
+{
+
+}
+#seccion01 article
+{
+	
+	background: #3dc4b6;
+	display: inline-block;
+	margin-top: -20px;
+	text-align: top;
+
+}
+#secc01art01
+{
+	width: 70%;
+	background: #3dc4b6;
+}
+#secc01art02
+{
+	width: 40%;
+	padding: 30px;
+	margin-top: -500px;
+	margin-left: 600px;
+	background: #3dc4b6;
+	color: white;
+}
+#playera
+{
+	width: 50%;
+}
+#colorblanco
+{
+	color: white;
+
+}
+#seccion02 article
+{
+	display: inline-block;
+	margin-top: 20px;
+	margin: 30px 7px;
+	width: 23%
+	text-align:center;
+}
+#secc02art01
+{
+	width: 20%;
+	margin-left: 30px;
+	margin-top: 150px;
+
+}
+#secc02art02
+{
+	width: 20%;
+	
+}
+#secc02art03
+{
+	width: 20%;
+}
+#secc02art04
+{
+	width: 20%;
+}
+#button
+
+
+
+

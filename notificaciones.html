@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Notificaciones HTML5</title>
+</head>
+<body>
+		<button onclick="enviarNotificacion();">Notificaciones</button>
+		<script>
+			function enviarNotificacion()
+			{
+				//Comprobar que el navegador soporta notificaciones//
+				if(!("Notification" in window))
+				{
+					alert("No soporta notificaciones");
+					//comprobamos si ya habiamos autorizado notificaciones anteriormente//
+				}else if(Notification.permission==="granted"){
+					var notificacion=new Notification("Segunda notificacion");
+				}else if(Notification.permission==="denied"||Notification.permission==="default")
+					{
+						//Pedimos permiso para lanzar notificacion
+						Notification.requestPermission(function(permission)
+						{
+							//Si el usuario concede creamos la notificacion, 
+							if(permission==="granted")
+							{
+								var notificacion=new Notification("Bienvenido a las notificaciones de la pagina PW2181_11");
+							}
+						});
+					}
+			}
+		</script>
+
+
+</body>
+</html>

@@ -6,7 +6,7 @@
 </head>
 <body>
 	<!--AIzaSyDeQ3ud8drl6Nm3lY-w9Cnz77KYKoRxAvA-->
-	<p id='demo'>Obtener posicion del mapa</p>
+	<p id="demo">Obtener posicion del mapa</p>
 	<button onclick="localizacion();">Aceptar</button>
 	<div id="mapa"></div>
 	<script>
@@ -14,9 +14,8 @@
 		function muestraPosicion(position)
 		{
 			var latlon=position.coords.latitude+","+position.coords.longitude;
-			var imagenMapa=imagenMapa="https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&key=AIzaSyDeQ3ud8drl6Nm3lY-w9Cnz77KYKoRxAvA";
-			document .getElementById("mapa").innerHTML=
-			"<img src='"+imagenMapa"'>"
+			var imagenMapa="https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&key=AIzaSyDeQ3ud8drl6Nm3lY-w9Cnz77KYKoRxAvA";
+			document.getElementById("mapa").innerHTML="<img src='"+imagenMapa+"'>"
 			document.getElementById("demo").innerHTML=latlon;
 		}
 		function muestraError(error)

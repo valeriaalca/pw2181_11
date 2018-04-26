@@ -41,6 +41,7 @@ var Marvel = function()
 					}
 
 					$("#series").html(series);
+					
 				}
 			}
 		});

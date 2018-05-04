@@ -21,6 +21,8 @@ function muestraPantallaPrincipal()
 		protocol: 'file',
 		slashes: true
 	}));
+	//Es igual al click derecho, inspeccionar en chrome.
+	PantallaPrincipal.webContents.openDevTools();
 	//Mostramos la pantalla
 	PantallaPrincipal.show();
 }

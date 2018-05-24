@@ -6,6 +6,9 @@ body
 	max-width: 1024px;
 
 }
+#frmUsuarios{
+	display:none;
+}
 #secInicio
 {
 	margin: 0 auto;

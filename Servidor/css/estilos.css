@@ -9,7 +9,7 @@ body
 #frmUsuarios{
 	display:none;
 }
-#secInicio
+#secInicio,#frmUsuarios
 {
 	margin: 0 auto;
 	margin-top: 50px;

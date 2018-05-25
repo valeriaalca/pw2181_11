@@ -40,7 +40,7 @@ var inicioApp = function()
 			var usuario = $("#txtNombreUsuario").val();
 			var parametros="opc=buscaUsuario"+
 							"&usuario="+usuario+
-							"%aleatorio="+Math.random();
+							"&aleatorio="+Math.random();
 			if(usuario != ""){
 				$.ajax({
 			cache:false,
@@ -52,9 +52,11 @@ var inicioApp = function()
 			{
 				if(response.respuesta == true){
 					$("#txtNombre").val(response.nombre);
-					$("txtClaveUsuario").val(respo.clave);
+					$("#txtClaveUsuario").val(response.clave);
 				}else{
 					$("#txtNombre").focus();
+					$("#txtNombre").val("");
+					$("#txtClaveUsuario").val("");
 				}
 			},
 			error: function(xhr,ajaxOptions,throenError)
@@ -69,10 +71,43 @@ var inicioApp = function()
 				buscaUsuario();
 			}
 		}
+		var Guardar = function(){
+			var usuario =$("#txtUsuario").val();
+			var nombre =$("#txtNombre").val();
+			var clave =$("#txtClaveUsuario").val();
+			if(usuario!="" && nombre !="" && clave!=""){
+					$.ajax({
+			cache:false,
+			type: "POST",
+			dataType: "json",
+			url:"php/buscaUsuario.php",
+			data: parametros,
+			success: function(response)
+			{
+				if(response.respuesta == true){
+					$("#txtNombre").val(response.nombre);
+					$("#txtClaveUsuario").val(response.clave);
+				}else{
+					$("#txtNombre").focus();
+					$("#txtNombre").val("");
+					$("#txtClaveUsuario").val("");
+				}
+			},
+			error: function(xhr,ajaxOptions,throenError)
+			{
 
+			}
+		});
+			}else{
+				alert("Llene todos los datos");
+			}
+
+		}
 	
 	$("#btnAceptar").on("click",Aceptar);
 	$("frmUsuarios").hide();
 	$("#txtNombreUsuario").on("keypress",teclaNombreUsuario);
+	$("#btnGuardar").on("click", Guardar);
+
 }
 $(document).ready(inicioApp);

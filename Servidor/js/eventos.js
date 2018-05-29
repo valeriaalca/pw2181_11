@@ -104,11 +104,44 @@ var inicioApp = function()
 			}
 
 		}
+		var Borrar = function() {
+			var usuario = $("#txtUsuario").val();
+			var pregunta = prompt("Seguro de borrar"+usuario+"? (si/no)", "No");
+			var parametros = "opc=borrarUsuario"+
+							"&usuario="+usuario+
+							"&aleatorio="+Math.random();
+
+	if (pregunta!= null && pregunta == "si") {
+    			//Aqui va el ajax...:
+    			$.ajax({
+			cache:false,
+			type: "POST",
+			dataType: "json",
+			url:"php/borrarUsuario.php",
+			data: parametros,
+			success: function(response)
+			{
+				if(response.respuesta == true){
+					alert("Usuario borrado");
+					$("#frmUsuarios > input").val("");
+					$("#txtNombreUsuario").focus();
+				}else{
+					alert("Ocurrio un error, intente mas tarde");
+				}
+			},
+			error: function(xhr,ajaxOptions,throenError)
+			{
+
+			}
+		});
+			}
+		}
 	
 	$("#btnAceptar").on("click",Aceptar);
 	$("frmUsuarios").hide();
 	$("#txtNombreUsuario").on("keypress",teclaNombreUsuario);
 	$("#btnGuardar").on("click", Guardar);
+	$("#btnBorrar").on("click", Borrar);
 
 }
 $(document).ready(inicioApp);
